@@ -1,0 +1,12 @@
+.detail {
+    font-size: 1.4rem;
+    background: $color-gray-light-1;
+    padding: 4.5rem;
+    border-bottom: $line;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include respond(tab-land) {
+        padding: 3rem;
+    }  
+}

@@ -1,0 +1,11 @@
+.container {
+    width: $max-width;
+    background: $color-white;
+    margin: 8rem auto;
+    box-shadow: $shadow-dark;
+
+    @include respond(tab-land) {
+        width: 100%;
+        margin: 0;
+    }
+}

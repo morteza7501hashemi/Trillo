@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;    // 1rem = 10px , 10/16 = 62.5%
+
+    @include respond(tab-port) {
+        font-size: 50%;    // 1rem = 8px , 8/16 = 50%
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%;    // 1rem = 9px , 9/16 = 56.25%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%;    // 1rem = 12px , 12/16 = 75%
+    }
+}
+
+body {
+    color: $color-gray-dark-2;
+    font: $font;
+    background: linear-gradient(to right bottom,
+    $color-primary-light,
+    $color-primary-dark);
+    box-sizing: border-box;
+}
+
+::selection {
+    color: $color-gray-light-1;
+    background: $color-primary;
+}

@@ -1,0 +1,77 @@
+.btn {
+    color: $color-white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right,
+        $color-primary-light,
+        $color-primary-dark);
+    border-radius: 10rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    & > * {
+        width: 100%;
+        display: inline-block;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background: linear-gradient(to right,
+        $color-primary-dark,
+        $color-primary-light);
+    }
+
+    &:focus {
+        animation: pulsate 1s infinite;
+    }
+
+    &__visible {
+        padding: 2rem 7.5rem;
+    }
+
+    &:hover &__visible {
+        transform: translateY(100%);
+    }
+
+    &__invisible {
+        padding: 2rem 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+    }
+
+    &:hover &__invisible {
+        top: 0;
+    }
+}
+
+.btn-inline {
+    color: $color-primary;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background: transparent;
+    padding-bottom: 2px;
+    border-bottom: 1px solid currentColor;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        color: $color-gray-dark-1;
+    }
+
+    &:focus {
+        animation: pulsate 1s infinite;
+    }
+ 
+    &__arrow {
+        color: currentColor;
+        transition: margin .2s;
+    }
+
+    &:hover &__arrow {
+        margin-left: .5rem;
+    }
+}

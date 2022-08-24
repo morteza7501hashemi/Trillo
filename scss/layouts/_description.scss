@@ -1,0 +1,25 @@
+.description {
+    flex: 0 0 60%;
+    background: $color-white;
+    margin-right: 4.5rem;
+    padding: 3rem;
+    box-shadow: $shadow-light;
+
+    @include respond(tab-land) {
+        margin-right: 3rem;
+        padding: 2rem;
+    }
+
+    @include respond(tab-port) {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 3rem;
+        padding: 2rem;
+    }
+}
+
+.paragraph {
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}

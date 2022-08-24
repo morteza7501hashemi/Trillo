@@ -1,0 +1,84 @@
+.services {
+    width: 100%;
+    margin-top: 3.5rem;
+    @include center-with-flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    @include respond(tab-port) {
+        margin-top: 0;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    @include respond(phone) {
+        flex-wrap: wrap;
+
+    }
+
+    &__item {
+        width: 100%;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        padding: 1.5rem 3rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        transition: all .1s;
+
+        @include respond(tab-land) {
+            padding: 1.5rem 0;
+            justify-content: center;
+        }
+
+        @include respond(tab-port) {
+            width: 25%;
+            padding: 1.5rem 0;
+            border-right: 1px solid $color-gray-dark-1;
+            border-bottom: 1px solid $color-gray-dark-1;
+        }
+
+        @include respond(phone) {
+            width: 50%;
+        }
+
+        &:first-child {
+            background: $color-primary;
+        }
+
+        &::before {
+            width: 2%;
+            height: 100%;
+            content: "";
+            background: $color-primary;
+            transform: scaleY(0);
+            position: absolute;
+            inset: 0;
+            transition: all .2s , width .4s cubic-bezier(1,0,0,1) .2s;    
+        }
+
+        &:hover::before {
+            width: 100%;
+            transform: scaleY(1);
+        }
+
+        &:active::before {
+            background: $color-primary-light;
+        } 
+    }
+
+    &__link {
+        color: $color-gray-light-1;
+        @include center-with-flex;
+        z-index: 5;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: currentColor;
+        margin: 0 1.75rem 0.4rem 0;
+    }
+}

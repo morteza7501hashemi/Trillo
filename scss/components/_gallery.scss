@@ -1,0 +1,11 @@
+.gallery {
+    display: flex;
+
+    @include respond(phone) {
+        height: 15rem;
+    }
+
+    &__item {
+        width: 33.334%;
+    }
+}

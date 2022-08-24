@@ -1,0 +1,43 @@
+.search {
+    flex: 0 0 40%;
+    @include center-with-flex;
+
+    @include respond(phone) {
+        flex: 0 0 60%;
+        margin: 0 auto;
+        order: 1;
+        transform: translateY(-.25rem);
+    }
+
+    &__input {
+        width: 90%;
+        color: inherit;
+        font: inherit;
+        background: $color-gray-light-2;
+        margin-right: -4rem;
+        padding: .7rem 2rem;
+        border-radius: 10rem;
+        transition: all .2s;
+
+        &::placeholder {
+            color: $color-gray-dark-2;
+            font-weight: 100;
+        }
+
+        &:focus {
+            width: 100%;
+            background: $color-gray-light-3;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        right: 10%;
+    }
+
+    &__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: $color-gray-dark-2;
+    }
+}

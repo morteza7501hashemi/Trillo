@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <meta name="theme-color" content="#eb2f64">
+    <meta name="msapplication-navbutton-color" content="#eb2f64">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Trillo | Booking App</title>
+</head>
+<body>
+
+<div class="container">
+
+    <header class="header">
+
+        <img class="header__logo" src="img/logo.png" alt="Logo">
+
+        <form class="search" action="#">
+            <input class="search__input" type="text" placeholder="Search hotels">
+            <svg class="user__icon"><use xlink:href="icon/icon.svg#search"></use></svg>
+            <button class="search__button" type="submit"></button>
+        </form>
+
+        <ul class="user">
+            <li class="user__item">
+                <svg class="user__icon"><use xlink:href="icon/icon.svg#bookmark"></use></svg>
+                <span class="user__notification">7</span>
+            </li>
+            <li class="user__item">
+                <svg class="user__icon"><use xlink:href="icon/icon.svg#chat"></use></svg>
+                <span class="user__notification">9</span>
+            </li>
+            <li class="user__item">
+                <img class="user__photo" src="./img/user.jpg" alt="User Photo">
+                <span class="user__name">Hashemi</span>
+            </li>
+        </ul>
+
+    </header>
+
+    <div class="content">
+
+        <aside class="sidebar">
+
+            <ul class="services">
+                <li class="services__item">
+                    <a class="services__link" href="#">
+                        <svg class="services__icon"><use xlink:href="icon/icon.svg#home"></use></svg>
+                        <span>Hotel</span>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a class="services__link" href="#">
+                        <svg class="services__icon"><use xlink:href="icon/icon.svg#airplane"></use></svg>
+                        <span>Flight</span>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a class="services__link" href="#">
+                        <svg class="services__icon"><use xlink:href="icon/icon.svg#key"></use></svg>
+                        <span>Car Rental</span>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a class="services__link" href="#">
+                        <svg class="services__icon"><use xlink:href="icon/icon.svg#map"></use></svg>
+                        <span>Tours</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar__copyright">
+                <p>&copy; 2022 by trillo. All rights reserved.</p>
+            </div>
+
+        </aside>
+
+        <main class="hotel-view">
+            
+            <div class="gallery">
+                <img class="gallery__item" src="img/hotel-1.jpg" alt="Hotel">
+                <img class="gallery__item" src="img/hotel-2.jpg" alt="Hotel">
+                <img class="gallery__item" src="img/hotel-3.jpg" alt="Hotel">
+            </div>
+
+            <div class="overview">
+
+                <h1 class="overview__heading">Hotel Las palmas</h1>
+
+                <div class="overview__stars">
+                    <svg class="overview__icon"><use xlink:href="icon/icon.svg#star"></use></svg>
+                    <svg class="overview__icon"><use xlink:href="icon/icon.svg#star"></use></svg>
+                    <svg class="overview__icon"><use xlink:href="icon/icon.svg#star"></use></svg>
+                    <svg class="overview__icon"><use xlink:href="icon/icon.svg#star"></use></svg>
+                    <svg class="overview__icon"><use xlink:href="icon/icon.svg#star"></use></svg>
+                </div>
+
+                <div class="overview__location">
+                    <svg class="overview__icon"><use xlink:href="icon/icon.svg#location"></use></svg>
+                    <button class="btn-inline" href="#">Albufeira, Portugal</button>
+                </div>
+
+                <div class="overview__rating">
+                    <p class="overview__rating--average">8.6</p>
+                    <p class="overview__rating--count">429 votes</p>
+                </div>
+
+            </div>
+
+            <div class="detail">
+                
+                <div class="description">
+
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.</p>
+                    <p class="paragraph">Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.</p>
+                    
+                    <ul class="list">
+                        <li class="list__item">
+                            <svg class="list__icon"><use xlink:href="icon/icon.svg#arrow"></use></svg>
+                            <span>Close to the beach</span>
+                        </li>
+                        <li class="list__item">
+                            <svg class="list__icon"><use xlink:href="icon/icon.svg#arrow"></use></svg>
+                            <span>Breakfast included</span>
+                        </li>
+                        <li class="list__item">
+                            <svg class="list__icon"><use xlink:href="icon/icon.svg#arrow"></use></svg>
+                            <span>Free airport shuttle</span>
+                        </li>
+                        <li class="list__item">
+                            <svg class="list__icon"><use xlink:href="icon/icon.svg#arrow"></use></svg>
+                            <span>Free wifi in all rooms</span>
+                        </li>
+                        <li class="list__item">
+                            <svg class="list__icon"><use xlink:href="icon/icon.svg#arrow"></use></svg>
+                            <span>Air conditioning and heating</span>
+                        </li>
+                        <li class="list__item">
+                            <svg class="list__icon"><use xlink:href="icon/icon.svg#arrow"></use></svg>
+                            <span>Pets allowed</span>
+                        </li>
+                        <li class="list__item">
+                            <svg class="list__icon"><use xlink:href="icon/icon.svg#arrow"></use></svg>
+                            <span>We speak all languages</span>
+                        </li>
+                        <li class="list__item">
+                            <svg class="list__icon"><use xlink:href="icon/icon.svg#arrow"></use></svg>
+                            <span>Perfect for families</span>
+                        </li>
+                    </ul>
+
+                    <div class="recommend">
+                        <div class="recommend__count">
+                            Lucy and 3 other friends recommend this hotel.
+                        </div>
+                        <div class="recommend__friends">
+                            <img class="recommend__photo" src="img/user-3.jpg" alt="Friend 1">
+                            <img class="recommend__photo" src="img/user-4.jpg" alt="Friend 2">
+                            <img class="recommend__photo" src="img/user-5.jpg" alt="Friend 3">
+                            <img class="recommend__photo" src="img/user-6.jpg" alt="Friend 4">
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="user-reviews">
+
+                    <div class="review">
+
+                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.</p>
+                        
+                        <div class="review__user">
+                            <img class="review__user--photo" src="img/user-1.jpg" alt="User 1">
+                                <div class="review__user--box">
+                                    <p class="review__user--name">Nick Smith</p>
+                                    <p class="review__user--date">Feb 23rd, 2022</p>
+                                </div>
+                            <p class="review__user--rating">7.8</p>
+                        </div>
+
+                     </div>
+
+                    <div class="review">
+
+                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.</p>
+                        
+                        <div class="review__user">
+                            <img class="review__user--photo" src="img/user-2.jpg" alt="User 2">
+                                <div class="review__user--box">
+                                    <p class="review__user--name">Mary Thomas</p>
+                                    <p class="review__user--date">Apr 13th, 2022</p>
+                                </div>
+                            <p class="review__user--rating">9.3</p>
+                        </div>
+
+                    </div>
+
+                    <button class="btn-inline" href="#">
+                        Show all
+                        <span class="btn-inline__arrow">&rarr;</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="cta">
+
+                <p class="cta__paragraph">Good news! We have 4 free rooms for your selected dates!</p>
+                <button class="btn">
+                    <span class="btn__visible">Book now</span>
+                    <span class="btn__invisible">Only 4 rooms left</span>
+                </button>
+
+                <div class="cta__copyright">
+                    <p>&copy; 2022 by trillo. All rights reserved.</p>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+</html>

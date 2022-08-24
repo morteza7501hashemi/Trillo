@@ -1,0 +1,35 @@
+.recommend {
+    color: $color-gray-dark-3;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &__count {
+        flex: 0 0 70%;
+
+        @include respond(phone) {
+            flex: 0 0 100%;
+        }
+    }
+
+    &__friends {
+        display: flex;
+    }
+
+    &__photo {
+        width: 4rem;
+        height: 4rem;
+        border: 3px solid $color-white;
+        border-radius: 50%;
+        box-sizing: content-box;
+
+        &:not(:last-child) {
+            margin-right: -2rem;
+        }
+    }
+}
